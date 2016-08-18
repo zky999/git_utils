@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+while read pid; do
+	kill -9 "$pid"
+done <<<"$(ps ef |awk '$6 == "/usr/bin/ssh-agent" {print $2}')"
+
