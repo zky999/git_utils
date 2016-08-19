@@ -1,0 +1,2 @@
+alias sago='eval "$(ssh-agent -s)"
+
